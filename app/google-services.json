@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "337966688739",
+    "firebase_url": "https://what-do-we-eat-today.firebaseio.com",
+    "project_id": "what-do-we-eat-today",
+    "storage_bucket": "what-do-we-eat-today.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:337966688739:android:6df5f45cd8438afd",
+        "android_client_info": {
+          "package_name": "com.example.maratbe.whatdoieattoday"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "337966688739-fa3s5qr7mb4ggb28hd56bauc79kk0kvm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.maratbe.whatdoieattoday",
+            "certificate_hash": "ae2e4e2b0b9c83361a9a7e23605c8c0b12c03aff"
+          }
+        },
+        {
+          "client_id": "337966688739-g4h4bvdeluldod0hhl9ar83voqtgd1rb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAv5Nfmp0MgWbd6gGavHoooxmzrqal9JqQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "337966688739-g4h4bvdeluldod0hhl9ar83voqtgd1rb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.maratbe.whatdoieattoday.MainActivity"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+   <android.support.v4.widget.DrawerLayout
+       android:id="@+id/drawer_layout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <LinearLayout
+           android:id="@+id/main_layout"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+           <include layout="@layout/toolbar"/>
+
+           <android.support.v4.view.ViewPager
+               xmlns:android="http://schemas.android.com/apk/res/android"
+               android:id="@+id/pager"
+               android:layout_width="match_parent"
+               android:paddingBottom="10dp"
+               android:layout_weight="8"
+               android:layout_height="0dp" />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:gravity="center"
+               android:paddingBottom="3dp"
+               android:layout_weight="1"
+               android:id="@+id/main_menu_layout"
+               android:layout_height="0dp">
+
+               <Button
+                   android:id="@+id/build_menu_btn"
+                   android:layout_width="55dp"
+                   android:layout_marginEnd="50dp"
+                   android:layout_height="55dp"
+                   android:gravity="bottom"
+                   android:background="@drawable/my_build_menu"
+                   style="?android:attr/buttonBarButtonStyle"/>
+
+               <Button
+                   android:id="@+id/cart_btn"
+                   android:layout_marginEnd="50dp"
+                   android:layout_width="55dp"
+                   android:layout_height="55dp"
+                   android:gravity="bottom"
+                   android:background="@drawable/my_cart"
+                   style="?android:attr/buttonBarButtonStyle"/>
+
+               <Button
+                   android:id="@+id/menu_btn"
+                   android:layout_width="55dp"
+                   android:layout_height="55dp"
+                   android:gravity="bottom"
+                   android:background="@drawable/my_menu"
+                   style="?android:attr/buttonBarButtonStyle"/>
+
+           </LinearLayout>
+       </LinearLayout>
+
+       <android.support.design.widget.NavigationView
+           android:id="@+id/navigation_view"
+           android:layoutDirection="rtl"
+           android:layout_width="200dp"
+           android:layout_height="match_parent"
+           android:fitsSystemWindows="true"
+           android:layout_gravity="start"
+           android:textDirection="rtl"
+           android:background="@color/white"
+           app:itemTextColor="@color/black"
+           app:itemIconTint="@drawable/my_drawer_item"
+           app:itemBackground="@drawable/my_drawer_item"
+           app:menu="@menu/drawer_menu"
+           app:headerLayout="@layout/drawer_header"/>
+   </android.support.v4.widget.DrawerLayout>
+
+    <LinearLayout
+        android:id="@+id/entry_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome"
+            android:textColor="@color/red_2"
+            android:layout_marginBottom="20dp"
+            android:textSize="20pt"/>
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/avi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AVLoadingIndicatorView"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/loading_data"
+            android:textSize="8pt"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="100dp"
+            android:layout_marginEnd="20dp"
+            android:layout_height="100dp" />
+    </LinearLayout>
+
+</FrameLayout>

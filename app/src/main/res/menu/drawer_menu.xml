@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawer_restaurant"
+            android:icon="@drawable/ic_restaurant_red"
+            android:title="@string/restaurant" />
+        <item
+            android:id="@+id/drawer_logon"
+            android:icon="@drawable/ic_person_red"
+            android:title="@string/logon" />
+        <item
+            android:id="@+id/drawer_logout"
+            android:icon="@drawable/ic_person_red"
+            android:title="@string/logout" />
+        <item
+            android:id="@+id/drawer_make_group"
+            android:icon="@drawable/ic_add_group_red"
+            android:title="@string/add_group" />
+        <item
+            android:id="@+id/drawer_my_groups"
+            android:icon="@drawable/group_red"
+            android:title="@string/my_groupa" />
+        <item
+            android:id="@+id/drawer_settings"
+            android:icon="@drawable/ic_settings_red"
+            android:title="@string/settings" />
+    </group>
+</menu>

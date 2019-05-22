@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?attr/actionBarSize"
+    android:background="@color/red_2"
+    app:theme="@style/ToolbarColoredBackArrow">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/save_menu_toolbar_btn"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:text="@string/save_btn"
+            android:textColor="@color/red_2"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/save_account_toolbar_btn"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:text="@string/save_btn"
+            android:textColor="@color/red_2"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/sync_toolbar_btn"
+        android:layout_marginStart="30dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="gone"
+        android:background="@drawable/ic_refresh_white"/>
+
+
+    <TextView
+        android:text="@string/app_name"
+        android:textAlignment="viewEnd"
+        android:textSize="11pt"
+        android:textColor="@color/white"
+        android:paddingEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</android.support.v7.widget.Toolbar>
+

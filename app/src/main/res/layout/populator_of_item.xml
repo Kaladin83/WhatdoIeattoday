@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="45dp">
+
+    <RelativeLayout
+        android:id="@+id/row_layout"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="45dp">
+
+        <Button
+            android:id="@+id/plus_btn"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/my_add_to_cart"
+            android:gravity="top"
+            android:padding="0dp"
+            android:layout_marginEnd="20dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:id="@+id/value_txt"
+            android:layout_toStartOf="@+id/plus_btn"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:gravity="center_vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"/>
+    </RelativeLayout>
+</LinearLayout>

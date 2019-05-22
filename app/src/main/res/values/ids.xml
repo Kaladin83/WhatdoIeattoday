@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="header_txt"/>
+    <item type="id" name="body_txt"/>
+    <item type="id" name="my_calendar"/>
+    <item type="id" name="disable_check_box"/>
+    <item type="id" name="check_box_r_layout"/>
+    <item type="id" name="check_box_txt"/>
+    <item type="id" name="email_spinner"/>
+    <item type="id" name="home_btn"/>
+</resources>
